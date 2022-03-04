@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage('build and test') {
-            agent { docker { image 'golang:1.14' } }
+            agent { docker { image 'golang:1.16' } }
             environment {
                 GOCACHE = '/tmp/gocache'
             }
